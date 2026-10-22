@@ -196,3 +196,38 @@ h1 {
 .site-footer { border-top: 1px solid var(--border); padding: 2rem 0; color: var(--muted); font-size: 0.95rem; }
 .site-footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem; }
 .site-footer p { margin: 0; }
+
+/* Pricing page */
+.site-header nav a[aria-current="page"] { background: var(--primary-soft); color: var(--primary); }
+.hero--center { text-align: center; padding-bottom: 1rem; }
+.hero--center .lead { max-width: 42rem; margin: 0 auto; }
+.section--tight { padding-top: 1.5rem; }
+.cta .cta__more { font-size: 1rem; }
+
+.pricing { display: grid; gap: 2.5rem; align-items: start; }
+@media (min-width: 56rem) { .pricing { grid-template-columns: 1fr 1fr; } }
+.price-card {
+  background: var(--surface); border: 2px solid var(--primary);
+  border-radius: var(--radius); box-shadow: var(--shadow-raised); padding: 2rem;
+}
+.price-card h2, .addons h2 { font-size: 1.45rem; margin: 0 0 0.5rem; }
+.price { margin: 0 0 0.5rem; }
+.price__amount { font-size: 3rem; font-weight: 700; letter-spacing: -0.02em; }
+.price__unit { color: var(--muted); font-size: 1.15rem; }
+.price-card__lead, .addons__lead { color: var(--muted); margin: 0 0 1.25rem; }
+.price-card .checks { margin-bottom: 1.75rem; }
+
+.addon-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+.addon-list li {
+  display: flex; justify-content: space-between; gap: 1rem; align-items: flex-start;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.1rem 1.3rem;
+}
+.addon-list h3 { font-size: 1.1rem; margin: 0 0 0.3rem; }
+.addon-list p { margin: 0; color: var(--muted); }
+.addon-list .addon-list__price { color: var(--text); font-weight: 600; white-space: nowrap; }
+
+.faq details { max-width: 46rem; }
+.faq details { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+.faq summary { cursor: pointer; font-weight: 600; font-size: 1.1rem; }
+.faq details p { margin: 0.75rem 0 0; color: var(--muted); }
